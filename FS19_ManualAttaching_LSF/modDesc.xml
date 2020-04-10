@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="40">
+	<author>kenny456, Burner</author>
+	<version>1.1</version>
+	<title>
+		<en>Manual attaching</en>
+	</title>
+	<description>
+		<en><![CDATA[Script for manual attaching all implements, cutters and trailers.]]></en>
+	</description>
+	<iconFilename>store.dds</iconFilename>
+	<multiplayer supported="true"/>
+	<extraSourceFiles>
+		<sourceFile filename="register.lua" />
+	</extraSourceFiles>
+	<l10n>
+		<text name="input_MA_ATTACH">
+            <en>Attach / Detach</en>
+        </text>
+		<text name="input_MA_PTO_ATTACH">
+            <en>PTO Attach / Detach</en>
+        </text>
+		<text name="input_MA_TOGGLE_MODE">
+            <en>MA Toggle mode</en>
+        </text>
+		<text name="input_MA_TOGGLE_MODE_PLAYER">
+            <en>MA Toggle mode player</en>
+        </text>
+		<text name="input_MA_TOGGLE_HELP_MENU">
+            <en>MA Toggle help menu</en>
+        </text>
+		<text name="MA_ATTACH">
+            <en>Attach this implement</en>
+        </text>
+		<text name="MA_DETACH">
+            <en>Detach this implement</en>
+        </text>
+		<text name="MA_PTO_ATTACH">
+            <en>Attach PTO of this implement</en>
+        </text>
+		<text name="MA_PTO_DETACH">
+            <en>Detach PTO of this implement</en>
+        </text>
+		<text name="MA_PTO_ATTACH_WARNING"> 
+			<en>Please connect the PTO first to start this tool!</en>
+       	</text>
+		<text name="MA_PTO_DETACH_WARNING"> 
+			<en>Please disconnect the PTO first to detach this implement!</en>
+       	</text>
+		<text name="MA_PTO_ATTACH_WARNING_UNLOAD"> 
+			<en>Please connect the PTO first to start unloading!</en>
+       	</text>
+		<text name="MA_MODE_1"> 
+			<en>Manual Attaching mode - Manually only</en>
+       	</text>
+		<text name="MA_MODE_2"> 
+			<en>Manual Attaching mode - Inside vehicle only</en>
+       	</text>
+		<text name="MA_MODE_3"> 
+			<en>Manual Attaching mode - Both Manually / Inside</en>
+       	</text>
+	</l10n>
+	<actions>
+        <action name="MA_ATTACH" category="PLAYER" axisType="HALF" ignoreComboMask="false"/>
+        <action name="MA_PTO_ATTACH" category="PLAYER" axisType="HALF" ignoreComboMask="false"/>
+        <action name="MA_TOGGLE_MODE" category="VEHICLE" axisType="HALF" ignoreComboMask="false"/>
+        <action name="MA_TOGGLE_MODE_PLAYER" category="PLAYER" axisType="HALF" ignoreComboMask="false"/>
+        <action name="MA_TOGGLE_HELP_MENU" category="VEHICLE" axisType="HALF" ignoreComboMask="false" visible="false"/>
+    </actions>
+	<inputBinding>
+        <actionBinding action="MA_ATTACH" >
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_q" axisComponent="+" inputComponent="+" index="2"/>
+        </actionBinding>
+		<actionBinding action="MA_PTO_ATTACH" >
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_x" axisComponent="+" inputComponent="+" index="2"/>
+        </actionBinding>
+		<actionBinding action="MA_TOGGLE_MODE" >
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_a" axisComponent="+" inputComponent="+" index="2"/>
+        </actionBinding>
+		<actionBinding action="MA_TOGGLE_MODE_PLAYER" >
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_a" axisComponent="+" inputComponent="+" index="2"/>
+        </actionBinding>
+		<actionBinding action="MA_TOGGLE_HELP_MENU" >
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_a" axisComponent="+" inputComponent="+" index="2"/>
+        </actionBinding>
+    </inputBinding>
+</modDesc>

@@ -1,0 +1,26 @@
+FS19 - Manual Attaching
+
+v1.1
+Fixed following errors:
+-line 58: when you start new game as farm manager or start from scratch
+-line 438: when detaching PTO from trailer with PTO function
+-line 250: when start tipping with trailer with PTO function and no PTO attached
+-line 271: when attaching two conveyor belt (or any with driveable spec)
+-line 491: when detaching implement from attacherVehicle with no MA spec.
+
+With this mod you need to get out of the vehicle to attach or detach implement / trailer.
+-drive vehicle to implement, get out and move to attacherjoint
+-you will see attaching markers
+-you also need to manually attach PTO.
+-you need to detach PTO first before detach implement
+-you can switch between 3 mods of attaching (Manually only, Inside vehicle only and Both Manually / Insid)
+-if PTO is not connected, implement cant be turned on / start tipping
+-you can show / hide current MA mode in F1 help menu
+
+Controls:
+Attach / detach implement - "KEY_q"
+Attach / detach PTO - "KEY_x"
+Toglle mode - "KEY_lshift KEY_a"
+Show / hide mode in help menu - "KEY_lctrl KEY_a"
+
+If you find any errors or issues, let me know in comments or to kenny456@seznam.cz and i will fix it in next version.
